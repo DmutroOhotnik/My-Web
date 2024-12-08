@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="planner">
+    <header>
+        <h1>WEEKLY PLAN</h1>
+        <div class="header-input">
+            <label for="week-of">Week of</label>
+            <input type="text" id="week-of">
+        </div>
+        <div class="header-input">
+            <label for="healthy-habit">Healthy Habit</label>
+            <input type="text" id="healthy-habit">
+        </div>
+        <div class="checkboxes">
+            <label><input type="checkbox"> Rocked it</label>
+            <label><input type="checkbox"> Room for Improvement</label>
+        </div>
+    </header>
+    <div class="content">
+        <aside class="to-do">
+            <h2>TO DO</h2>
+            <div class="goals">
+                <h3>TOP 3 GOALS</h3>
+                <ul>
+                    <li><input type="checkbox"> <input type="text" placeholder="Goal 1"></li>
+                    <li><input type="checkbox"> <input type="text" placeholder="Goal 2"></li>
+                    <li><input type="checkbox"> <input type="text" placeholder="Goal 3"></li>
+                </ul>
+            </div>
+            <div class="everything-else">
+                <h3>EVERYTHING ELSE</h3>
+                <ul>
+                    <li><input type="checkbox"> <input type="text" placeholder="Task"></li>
+                    <li><input type="checkbox"> <input type="text" placeholder="Task"></li>
+                    <li><input type="checkbox"> <input type="text" placeholder="Task"></li>
+                </ul>
+            </div>
+            <div class="next-week">
+                <h3>NEXT WEEK</h3>
+                <ul>
+                    <li><input type="checkbox"><input type="text" placeholder="Plan"></li>
+                    <li><input type="checkbox"><input type="text" placeholder="Plan"></li>
+                    <li><input type="checkbox"><input type="text" placeholder="Plan"></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="days">
+            <div class="day">
+                <div class="day-head">
+                    <h3>MONDAY</h3>
+                    <input type="checkbox">
+                </div>
+                <textarea placeholder="Your plans"></textarea>
+            </div>
+            <div class="day">
+                <div class="day-head">
+                    <h3>TUESDAY</h3>
+                    <input type="checkbox">
+                </div>
+                <textarea placeholder="Your plans"></textarea>
+            </div>
+            <div class="day">
+                <div class="day-head">
+                    <h3>WEDNESDAY</h3>
+                    <input type="checkbox">
+                </div>
+                <textarea placeholder="Your plans"></textarea>
+            </div>
+            <div class="day">
+                <div class="day-head">
+                    <h3>THURSDAY </h3>
+                    <input type="checkbox">
+                </div>
+                <textarea placeholder="Your plans"></textarea>
+            </div>
+            <div class="day">
+                <div class="day-head">
+                    <h3>FRIDAY </h3>
+                    <input type="checkbox">
+                </div>
+                <textarea placeholder="Your plans"></textarea>
+            </div>
+
+            <div class="weekend">
+                <div class="day">
+                    <div class="day-head">
+                        <h3>SATURDAY</h3>
+                        <input type="checkbox">
+                    </div>
+                    <textarea placeholder="Your plans"></textarea>
+                </div>
+                <div class="day">
+                    <div class="day-head">
+                        <h3>SUNDAY</h3>
+                        <input type="checkbox">
+                    </div>
+                    <textarea placeholder="Your plans"></textarea>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.planner {
+    width: 90%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.header-input input {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    width: 150px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkboxes label {
+    margin-right: 15px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.to-do {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+.to-do h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.to-do h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.to-do ul {
+    list-style: none;
+}
+
+.to-do ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.to-do li{
+    border-bottom: 1px solid black;
+}
+
+.to-do input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.day {
+    background: #f9f9f9;
+    height: 220px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weekend {
+    display: grid;
+    gap: 4px;
+}
+
+.weekend .day{
+    height: 108px;
+}
+
+.day .day-head{
+    display: flex;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 5px 0;
+}
+
+textarea {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    resize: none;
+}
